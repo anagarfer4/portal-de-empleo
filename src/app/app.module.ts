@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header.component';
+import { ListaDeOfertasComponent } from './lista-de-ofertas/lista-de-ofertas.component';
+import { OfertaItemComponent } from './lista-de-ofertas/oferta-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    ListaDeOfertasComponent,
+    OfertaItemComponent,
   ],
   imports: [
     BrowserModule,
