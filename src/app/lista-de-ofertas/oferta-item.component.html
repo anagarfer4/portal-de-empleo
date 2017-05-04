@@ -1,15 +1,30 @@
 <a class="list-group-item">
- <span class="row">
-   <div class="col-md-8 pull-left">
-     <h4 class="list-group-item-heading">{{oferta.nombre}}</h4>
+ 
+ 
+   <div class="col-md-10 pull-right"> 
+     <h2 class="list-group-item-heading">{{oferta.nombre}}</h2>
+      <h3 class="list-group-item-text">{{oferta.empresa}}</h3>
      <p class="list-group-item-text">{{oferta.descripcion}}</p>
-     <p class="list-group-item-text">{{oferta.empresa}}</p>
-     <p class="list-group-item-text">{{oferta.fecha}}</p>
-     <p class="list-group-item-text">{{oferta.ciudad}}</p>
-   </div>
- <span class ="col-md-4 pull-right">
-   <img id="empresa" src="{{oferta.imagenUrl}}">
+     </div>
+   
+     <span class="row"> 
+      <span class ="col-md-6 pull-right">
+     <h4>{{oferta.ciudad}}</h4>
+    </span>
+     </span>
+
+    <span class="row"> 
+      <span class ="col-md-4 pull-right">
+     <h4>{{oferta.fecha}}</h4>
+    </span>
+     </span>
+    
+   
+  
+   <span class="row">
+    <span class ="col-md-2 pull-left">
+      <img id="empresa" src="{{oferta.imagenUrl}}">
+    </span>
    </span>
- </span>
 
 </a>
