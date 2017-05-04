@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { ListaDeOfertasComponent } from './lista-de-ofertas/lista-de-ofertas.component';
 import { OfertaItemComponent } from './lista-de-ofertas/oferta-item.component';
+import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.service';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,7 @@ import { OfertaItemComponent } from './lista-de-ofertas/oferta-item.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ServicioOfertaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
