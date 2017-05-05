@@ -25,3 +25,8 @@ devolverOferta(): Array<Oferta> {
 // }
 }
 
+// crear función eliminar(oferta) { // le tiene que llegar una oferta
+  // tiene que mirar en qué posición está la oferta (función indexOf())
+  // con la función slice(posicion del array, cuantos elementos quiero eliminar 1)
+//}
+

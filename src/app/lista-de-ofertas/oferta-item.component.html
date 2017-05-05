@@ -25,14 +25,19 @@
       <div class="col-xs-4,5 col-sm-3">
         <h4>{{oferta.fecha}}</h4>
       </div>
+      <br>
+        <p>{{oferta.inscrito}}</p>
     </div>
 <div class="btn-group">
-  <!--<button type="button" class="btn btn-success" (click)="<div class="alert alert-success" role="alert"> Enviar CV</button></div> //ARREGLAR!!!!!!-->
-  
   <br>
   <br>
+  <span><button [disabled]="desactivar" type="button" class="btn btn-success" (click)="aplicar()">Inscribirme</button></span>
   <span><button type="button" class="btn btn-primary" (click)="editar(input.value)" >Editar</button></span>
   <span><button type="button" class="btn btn-danger" (click)="eliminar(input.value)" >Eliminar</button></span>
-  <span><button type="button" class="btn btn-warning" (click)="bloquear(input.value)">Bloquear</button></span>
+  <span><button type="button" class="btn btn-warning" (click)="bloquear()">Bloquear oferta</button></span>
   </div>
 </a>
+
+<div *ngIf="inscripcion" class="alert alert-success" role="alert">¡Gracias por inscribirte! Próximamente nos pondremos en contacto contigo.</div>
+
+<div *ngIf="bloqueo" class="alert alert-warning" role="alert">Lo sentimos, esta oferta ya no admite más inscripciones.</div>

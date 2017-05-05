@@ -7,6 +7,7 @@ import { HeaderComponent } from './header.component';
 import { ListaDeOfertasComponent } from './lista-de-ofertas/lista-de-ofertas.component';
 import { OfertaItemComponent } from './lista-de-ofertas/oferta-item.component';
 import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.service';
+import { AlertComponent } from './alert.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.servic
     HeaderComponent,
     ListaDeOfertasComponent,
     OfertaItemComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,
