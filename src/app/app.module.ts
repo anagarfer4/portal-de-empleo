@@ -10,8 +10,7 @@ import { ListaDeOfertasComponent } from './lista-de-ofertas/lista-de-ofertas.com
 import { OfertaItemComponent } from './lista-de-ofertas/oferta-item.component';
 import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.service';
 import { FormularioComponent } from './formulario/formulario.component';
-import { EditarOfertaComponent } from './lista-de-ofertas/editar-oferta.component';
-import { AnadirOfertaComponent } from './lista-de-ofertas/anadir-oferta.component';
+
 
 
 @NgModule({
@@ -21,8 +20,7 @@ import { AnadirOfertaComponent } from './lista-de-ofertas/anadir-oferta.componen
     ListaDeOfertasComponent,
     OfertaItemComponent,
     FormularioComponent,
-    EditarOfertaComponent,
-    AnadirOfertaComponent,
+   
   ],
   imports: [
     BrowserModule,
