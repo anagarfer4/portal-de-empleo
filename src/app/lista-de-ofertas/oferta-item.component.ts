@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Oferta } from './oferta';
+import { Router } from '@angular/router';
 import { ServicioOfertaService } from './servicio-oferta.service';
 
 
@@ -16,7 +17,7 @@ export class OfertaItemComponent implements OnInit {
   bloqueo = false;
   desactivar = false;
 
-  constructor(private sos: ServicioOfertaService) { }
+  constructor(private sos: ServicioOfertaService, private router: Router ) { }
 
   ngOnInit() {
     this.items = this.sos.devolverOferta();
@@ -24,6 +25,9 @@ export class OfertaItemComponent implements OnInit {
 
   ofertaEditada(oferta: string) {
     this.sos.editar(oferta);
+  }
+  navegarAFormulario() {
+    this.router.navigate(['formulario']);
   }
 
   aplicar() {
