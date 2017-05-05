@@ -26,7 +26,7 @@ export class OfertaItemComponent implements OnInit {
     this.sos.editar(oferta);
   }
   navegarAFormulario() {
-    this.router.navigate(['/formulario']);
+    this.router.navigate(['formulario']);
   }
 
   // enviarOferta(oferta: string) {
