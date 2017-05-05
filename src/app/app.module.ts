@@ -2,11 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
 import { AppComponent } from './app.component';
+import { ROUTING } from './app.routing';
 import { HeaderComponent } from './header.component';
 import { ListaDeOfertasComponent } from './lista-de-ofertas/lista-de-ofertas.component';
 import { OfertaItemComponent } from './lista-de-ofertas/oferta-item.component';
 import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.service';
+import { FormularioComponent } from './formulario/formulario.component';
+import { EditarOfertaComponent } from './lista-de-ofertas/editar-oferta.component';
+import { AnadirOfertaComponent } from './lista-de-ofertas/anadir-oferta.component';
 
 
 @NgModule({
@@ -15,11 +20,15 @@ import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.servic
     HeaderComponent,
     ListaDeOfertasComponent,
     OfertaItemComponent,
+    FormularioComponent,
+    EditarOfertaComponent,
+    AnadirOfertaComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ROUTING
   ],
   providers: [ServicioOfertaService],
   bootstrap: [AppComponent]
