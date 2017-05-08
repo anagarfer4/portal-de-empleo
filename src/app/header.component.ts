@@ -17,7 +17,4 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['formulario']);
   }
 
-  navegarAOfertas() {
-    this.router.navigate(['lista-de-ofertas']);
-  }
 }

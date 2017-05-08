@@ -5,7 +5,6 @@ import { PagInicioComponent } from './pag-inicio/pag-inicio.component'
 import { OFERTA_ROUTES } from './lista-de-ofertas/oferta.routing';
 import { INICIO_ROUTES } from './pag-inicio/inicio.routing';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header.component'; //aqui
 import { ListaDeOfertasComponent } from './lista-de-ofertas/lista-de-ofertas.component';
 
 const APP_ROUTES: Routes = [
@@ -14,7 +13,6 @@ const APP_ROUTES: Routes = [
    { path: 'lista-de-ofertas', component: ListaDeOfertasComponent },
    { path: 'formulario', component: FormularioComponent },
    { path: '', component: PagInicioComponent },
-   { path: 'lista-de-ofertas', component: HeaderComponent }, //aqui
 
 ];
 
