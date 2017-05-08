@@ -14,19 +14,27 @@ export class ServicioOfertaService {
   ];
 
   constructor() { }
+
 editar(item: any) {
   this.ofertas.push(item)
 }
 devolverOferta(): Array<Oferta> {
   return this.ofertas;
 }
+
+  // crear función eliminar(oferta) a la que le tiene que llegar una oferta
+  // tiene que mirar en qué posición está la oferta con la función indexOf()
+  // y tiene que eliminarla con la función splice(posicion del array, cuantos elementos quiero eliminar, 1)
+
+eliminarOferta(oferta: Oferta) {
+  var ofertaAEliminar = this.ofertas.indexOf(oferta);
+  var ofertaEliminada = this.ofertas.splice(ofertaAEliminar, 1);
+}
+
 // //enviarOfertaEditada(oferta: any) {
 //   //this.ofertaEditada.emit(oferta);
 // }
 }
 
-// crear función eliminar(oferta) { // le tiene que llegar una oferta
-  // tiene que mirar en qué posición está la oferta (función indexOf())
-  // con la función slice(posicion del array, cuantos elementos quiero eliminar 1)
-//}
+
 

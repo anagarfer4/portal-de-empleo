@@ -23,7 +23,7 @@ export class OfertaItemComponent implements OnInit {
     this.items = this.sos.devolverOferta();
   }
 
-  ofertaEditada(oferta: string) {
+  ofertaEditada(oferta: Oferta) {
     this.sos.editar(oferta);
   }
   navegarAFormulario() {
@@ -37,6 +37,10 @@ export class OfertaItemComponent implements OnInit {
   bloquear() {
     this.desactivar = true;
     this.bloqueo = true;
+  }
+
+  eliminar(oferta: Oferta) {
+    this.sos.eliminarOferta(oferta);
   }
 
   // enviarOferta(oferta: string) {
