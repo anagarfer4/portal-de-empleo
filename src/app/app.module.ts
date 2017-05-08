@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -10,6 +11,7 @@ import { ListaDeOfertasComponent } from './lista-de-ofertas/lista-de-ofertas.com
 import { OfertaItemComponent } from './lista-de-ofertas/oferta-item.component';
 import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.service';
 import { FormularioComponent } from './formulario/formulario.component';
+import { PagInicioComponent } from './pag-inicio/pag-inicio.component';
 
 
 
@@ -20,6 +22,7 @@ import { FormularioComponent } from './formulario/formulario.component';
     ListaDeOfertasComponent,
     OfertaItemComponent,
     FormularioComponent,
+    PagInicioComponent,
    
   ],
   imports: [
