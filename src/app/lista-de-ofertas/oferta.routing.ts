@@ -5,5 +5,5 @@ import { AnadirOfertaGuard } from './anadir-oferta.guard';
 
 export const OFERTA_ROUTES: Routes = [
    { path: 'editar', component:FormularioComponent, canDeactivate: [EditarOfertaGuard] },
-   { path: 'anadir', component: FormularioComponent, canActivate: [AnadirOfertaGuard] }
+   { path: 'anadir', component: FormularioComponent, canDeactivate: [AnadirOfertaGuard] },
 ];
