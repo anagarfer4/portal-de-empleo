@@ -11,6 +11,8 @@ export class ServicioOfertaService {
     new Oferta('Desarrollador Front End', 'En inMediaStudio buscamos personas que quieran formar parte un equipo que disfruta con la tecnología, y cuyo objetivo principal es trabajar por y p...',
     'https://d1ewohb620cza6.cloudfront.net/job_cover_xs/job-covers/000/049/165/49165-original.jpg?1492430671', 'InMediaStudio Comunicación, S.L.', '04/05/2017', 'Alcobendas, España')
 
+    
+// de este apartado cogen los datos la oferta y la descripcion de la oferta
   ];
 
   constructor() { }
@@ -19,6 +21,10 @@ editar(item: any) {
 }
 devolverOferta(): Array<Oferta> {
   return this.ofertas;
+}
+
+devolverDescripcion(indice: number): Oferta { 
+  return this.ofertas[indice];
 }
 // //enviarOfertaEditada(oferta: any) {
 //   //this.ofertaEditada.emit(oferta);

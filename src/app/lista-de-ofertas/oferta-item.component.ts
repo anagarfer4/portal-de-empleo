@@ -11,6 +11,7 @@ import { ServicioOfertaService } from './servicio-oferta.service';
 })
 export class OfertaItemComponent implements OnInit {
   @Input() oferta: Oferta;
+  @Input() posicion: number;
 
   items: Array<Oferta> = [];
   inscripcion = false;
