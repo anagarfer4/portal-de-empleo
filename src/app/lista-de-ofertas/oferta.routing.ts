@@ -6,5 +6,5 @@ import { DescripcionComponent } from '../descripcion/descripcion.component';
 
 export const OFERTA_ROUTES: Routes = [
    { path: 'editar', component: FormularioComponent, canDeactivate: [EditarOfertaGuard] },
-   { path: 'anadir', component: FormularioComponent, canActivate: [AnadirOfertaGuard] }
+   { path: 'anadir', component: FormularioComponent, canDeactivate: [AnadirOfertaGuard] }
 ];

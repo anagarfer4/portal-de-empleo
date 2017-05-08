@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -12,6 +13,8 @@ import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.servic
 import { FormularioComponent } from './formulario/formulario.component';
 import { DescripcionComponent } from './descripcion/descripcion.component';
 import { AcortarDescripcionPipe } from './acortar-descripcion.pipe';
+import { PagInicioComponent } from './pag-inicio/pag-inicio.component';
+
 
 
 
@@ -24,6 +27,8 @@ import { AcortarDescripcionPipe } from './acortar-descripcion.pipe';
     FormularioComponent,
     DescripcionComponent,
     AcortarDescripcionPipe,
+    PagInicioComponent,
+
 
   ],
   imports: [
