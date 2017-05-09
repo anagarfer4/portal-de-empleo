@@ -1,6 +1,7 @@
 #brand {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 35px;
+    margin-left: 10px;
 }
 nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -10,6 +11,19 @@ nav {
 
 .navbar {
     color: black;
-    background-color: white;
+    background-color: hsl(207.8, 65.6%, 62.3%);
+}
+
+#boton1 {
+    margin-top: 8px;
+}
+
+#boton2 {
+    margin-top: 8px;
+    margin-right: 25px;
+}
+
+#botonEmpresa {
+    margin-left: 20px;
 }
 
