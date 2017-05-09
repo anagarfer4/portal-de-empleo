@@ -11,6 +11,7 @@ import { ServicioOfertaService } from './servicio-oferta.service';
 })
 export class OfertaItemComponent implements OnInit {
   @Input() oferta: Oferta;
+  @Input() posicion: number;
 
   items: Array<Oferta> = [];
   inscripcion = false;
@@ -37,6 +38,10 @@ export class OfertaItemComponent implements OnInit {
   bloquear() {
     this.desactivar = true;
     this.bloqueo = true;
+  }
+
+  eliminar(oferta: Oferta) {
+    this.sos.eliminarOferta(oferta);
   }
 
   // enviarOferta(oferta: string) {
