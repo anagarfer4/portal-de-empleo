@@ -3,6 +3,7 @@ import { Oferta } from './oferta';
 @Injectable()
 export class ServicioOfertaService {
   private ofertas: Array<Oferta> = [
+
     new Oferta('Programador PHP, MYSQL', 'Buscamos un programador PHP con al menos 1 año de experiencia para cubrir las necesidades en el departamento de informática, además de dar soporte a otros departamentos y desarrollar mejoras en la página web..',
     'http://www.infojobs.net/logo/logo/do-get.xhtml?id=22313713628&dgv=8640945448931150180', 'TICTUM, Innovación y Tecnología, S.L', '10/05/2017', 'Madrid, España', 'Jornada completa'),
     new Oferta('Becario Marketing Digital - Prácticas', 'Right Design Agency (RDA) es un equipo multidisciplinar compuesto por arquitectos, interioristas, diseñadores y gestores inmobiliarios y de comunic...', 'https://d1ewohb620cza6.cloudfront.net/job_cover_xs/job-covers/000/049/631/49631-original.jpg?1493811169', 'Right Design Agency', '10/05/2017', 'Madrid, España', 'tiempo completo'),
@@ -18,8 +19,10 @@ export class ServicioOfertaService {
     'https://d1ewohb620cza6.cloudfront.net/user_s3_avatar_126x96/avatars/000/060/193/60193-original.jpg?1385034511', 'BABEL Sistemas de Información', '04/05/2017', 'Málaga, España', 'tiempo completo'),
     new Oferta('Desarrollador Frontend iOS Jr', 'Buscamos un desarrollador Front End sin mucha experiencia para incorporarse a ambiente de trabajo juvenil y recién creado para nuevo proyecto. Se requieren conociemientos básicos de JavaScript y NodeJS, además de inglés demostrable y..',
     'http://cdn.iphonehacks.com/wp-content/uploads/2013/10/samsung-logo.jpg', 'Samsung', '03/05/2017', 'Valencia, España', 'Jornada completa'),
-    new Oferta('Programador Senior CMS TRIDION y .NET', 'Desde el departamento de RRHH de EDB, necesitamos incorporar un Programador con experiencia en el gestor de contenidos Tridion y en entorno .NET.Requisitos:- C#, SPM, SQL y..','http://www.infojobs.net/logo/logo/do-get.xhtml?id=876780150&dgv=6501052247269379676', 'EDB-Exportadora Data Base, S.A.', '30/04/2017', 'Bilbao, España', 'Jornada completa'),
-        
+    new Oferta('Programador Senior CMS TRIDION y .NET', 'Desde el departamento de RRHH de EDB, necesitamos incorporar un Programador con experiencia en el gestor de contenidos Tridion y en entorno .NET.Requisitos:- C#, SPM, SQL y..','http://www.infojobs.net/logo/logo/do-get.xhtml?id=876780150&dgv=6501052247269379676', 'EDB-Exportadora Data Base, S.A.', '30/04/2017', 'Bilbao, España', 'Jornada completa')
+    
+
+
     
 // de este apartado cogen los datos la oferta y la descripcion de la oferta
   ];

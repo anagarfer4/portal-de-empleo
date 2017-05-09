@@ -1,0 +1,18 @@
+#margen { 
+    margin: 15px;
+}
+#margin { 
+    margin: 20px;
+}
+
+#resum { 
+/*poner estilo negrita y gris al texto resumen*/
+}
+
+#lista{
+/*poner el estilo al los titulos de la lista del resumen*/
+}
+
+#descript {
+/*darle formato al link*/
+}
