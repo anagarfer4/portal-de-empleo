@@ -6,7 +6,7 @@
       <img id="empresa" src="{{oferta.imagenUrl}}">
     </div>
     <div class="col-sm-6">
-      <a id="descript" [routerLink]="['oferta-info', posicion]">
+      <a id="descript" [routerLink]="['/oferta-info', posicion]">
         <h3>{{oferta.nombre}}</h3>
       </a>
       <h3>{{oferta.empresa}}</h3>
@@ -30,7 +30,7 @@
     <br>
     <span><button [disabled]="desactivar" type="button" class="btn btn-success" (click)="aplicar()">Inscribirme</button></span>
     <span><button type="button" class="btn btn-primary" (click)="navegarAFormulario()">Editar oferta</button></span>
-    <span><button type="button" class="btn btn-danger" (click)="eliminar(input.value)" >Eliminar</button></span>
+    <span><button type="button" class="btn btn-danger" (click)="eliminar(oferta)">Eliminar</button></span>
     <span><button type="button" class="btn btn-warning" (click)="bloquear()">Bloquear oferta</button></span>
   </div>
 </a>

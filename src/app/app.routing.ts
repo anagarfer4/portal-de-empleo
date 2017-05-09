@@ -9,14 +9,12 @@ import { ListaDeOfertasComponent } from './lista-de-ofertas/lista-de-ofertas.com
 import { DescripcionComponent } from './descripcion/descripcion.component';
 
 const APP_ROUTES: Routes = [
-   { path: 'oferta-item/', redirectTo: '' },
-   { path: 'oferta-item/:id', component: OfertaItemComponent, children: OFERTA_ROUTES },
-   { path: '', component: ListaDeOfertasComponent },
-   { path: 'formulario', component: FormularioComponent },
-   { path: 'oferta-info/:id', component: DescripcionComponent },
-   { path: 'lista-de-ofertas', component: ListaDeOfertasComponent },
-   { path: 'formulario', component: FormularioComponent },
-   { path: '', component: PagInicioComponent },
+    { path: 'oferta-item/', redirectTo: '' },
+    { path: 'oferta-item/:id', component: OfertaItemComponent, children: OFERTA_ROUTES },
+    { path: 'lista-de-ofertas', component: ListaDeOfertasComponent },
+    { path: 'formulario', component: FormularioComponent },
+    { path: '', component: PagInicioComponent },
+    { path: 'oferta-info/:id', component: DescripcionComponent }
 
 
 ];
