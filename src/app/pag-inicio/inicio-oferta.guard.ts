@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 export interface ComponenteCanDeactivate {
     canDeactivate: () => Observable<boolean> | boolean;
-} 
+}
 
 export class InicioOfertaGuard implements CanDeactivate <ComponenteCanDeactivate> {
   canDeactivate(componente: ComponenteCanDeactivate): Observable<boolean> | Promise<boolean> | boolean {

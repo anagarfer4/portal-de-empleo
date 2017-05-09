@@ -12,6 +12,10 @@ import { OfertaItemComponent } from './lista-de-ofertas/oferta-item.component';
 import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.service';
 import { FormularioComponent } from './formulario/formulario.component';
 import { PagInicioComponent } from './pag-inicio/pag-inicio.component';
+import { DescripcionComponent } from './descripcion/descripcion.component';
+import { AcortarDescripcionPipe } from './acortar-descripcion.pipe';
+
+
 
 
 
@@ -23,7 +27,9 @@ import { PagInicioComponent } from './pag-inicio/pag-inicio.component';
     OfertaItemComponent,
     FormularioComponent,
     PagInicioComponent,
-   
+    DescripcionComponent,
+    AcortarDescripcionPipe,
+
   ],
   imports: [
     BrowserModule,

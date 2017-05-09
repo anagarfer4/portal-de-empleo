@@ -5,5 +5,5 @@ import { InicioOfertaGuard } from './inicio-oferta.guard';
 
 
 export const INICIO_ROUTES: Routes = [
-   { path: 'inicio', component:ListaDeOfertasComponent, canActivate: [InicioOfertaGuard] },
+   { path: 'inicio', component: ListaDeOfertasComponent, canActivate: [InicioOfertaGuard] },
 ];
