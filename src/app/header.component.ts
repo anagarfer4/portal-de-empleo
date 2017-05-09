@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Oferta } from './lista-de-ofertas/oferta';
+import { BuscadorPipe } from './buscador.pipe';
 
 @Component({
   selector: 'app-header',
@@ -17,4 +19,4 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['formulario']);
   }
 
-}
+  }
