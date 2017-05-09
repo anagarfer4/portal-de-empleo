@@ -9,7 +9,8 @@ const APP_ROUTES: Routes = [
    { path: 'oferta-item/', redirectTo: '' },
    { path: 'oferta-item/:id', component: OfertaItemComponent, children: OFERTA_ROUTES },
    { path: '', component: ListaDeOfertasComponent },
-   { path: 'formulario', component: FormularioComponent }
+   { path: 'formulario', component: FormularioComponent },
+   { path: 'lista-de-ofertas', component: ListaDeOfertasComponent }
 
 ];
 

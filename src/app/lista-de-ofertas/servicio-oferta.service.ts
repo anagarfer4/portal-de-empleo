@@ -12,21 +12,26 @@ export class ServicioOfertaService {
     'https://d1ewohb620cza6.cloudfront.net/job_cover_xs/job-covers/000/049/165/49165-original.jpg?1492430671', 'InMediaStudio Comunicación, S.L.', '04/05/2017', 'Alcobendas, España')
 
   ];
+  ofertaEnviada = new EventEmitter <Oferta> ();
 
   constructor() { }
-editar(item: any) {
-  this.ofertas.push(item)
+  editar(oferta: Oferta) {
+  this.ofertas.push(oferta)
 }
 devolverOferta(): Array<Oferta> {
   return this.ofertas;
 }
-// //enviarOfertaEditada(oferta: any) {
-//   //this.ofertaEditada.emit(oferta);
-// }
+
+
+
+anadirOfertaEnviada (oferta: Oferta) {
+  this.ofertaEnviada.emit(oferta);
+  
 }
+
 
 // crear función eliminar(oferta) { // le tiene que llegar una oferta
   // tiene que mirar en qué posición está la oferta (función indexOf())
   // con la función slice(posicion del array, cuantos elementos quiero eliminar 1)
-//}
+}
 

@@ -23,7 +23,7 @@ export class OfertaItemComponent implements OnInit {
     this.items = this.sos.devolverOferta();
   }
 
-  ofertaEditada(oferta: string) {
+  ofertaEditada(oferta: Oferta) {
     this.sos.editar(oferta);
   }
   navegarAFormulario() {
