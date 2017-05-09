@@ -24,11 +24,9 @@ devolverOferta(): Array<Oferta> {
   return this.ofertas;
 }
 
-
 devolverDescripcion(indice: number): Oferta { 
   return this.ofertas[indice];
 }
-
 
 eliminarOferta(oferta: Oferta) {
   var ofertaAEliminar = this.ofertas.indexOf(oferta);
