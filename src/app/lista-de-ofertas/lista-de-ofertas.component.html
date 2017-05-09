@@ -15,7 +15,7 @@
  <div class="col-md-12">
    <ul class="list-group">
 
-    <app-oferta-item [oferta]="oferta" *ngFor ="let oferta of ofertas | buscador:buscador.value; let posicion = index" [posicion]="posicion"></app-oferta-item>
+    <app-oferta-item  *ngFor ="let oferta of ofertas | buscador:buscador.value; let posicion = index" [oferta]="oferta" [posicion]="posicion"></app-oferta-item>
 
     </ul>
  </div>
