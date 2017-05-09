@@ -1,12 +1,45 @@
-
 <div class="row">
-<div class="col-sm-6">
-    <h5>Oferta publicada el {{oferta.fecha}}</h5>
-    <h2>{{oferta.nombre}}</h2>
-    <h4>{{oferta.empresa}}</h4>
-    <h5>{{oferta.ciudad}}</h5>
- 
-</div>
+    <div class="col-sm-12">
+        <div id="margen" class="row">
+            <div class="col-sm-5">
+
+                <h5>Oferta publicada el {{oferta.fecha}}</h5>
+                <h2>{{oferta.nombre}}</h2>
+                <a class="backlink hidden-xs" href="/lista-de-ofertas">←</a>
+                <a id="descript" href="#">
+                    <h4>{{oferta.empresa}}</h4>
+                </a>
+                <h5>{{oferta.ciudad}}</h5>
+                <h5>{{oferta.horario}}</h5>
+                <!--poner botones con rrss-->
+            </div>
+            <div class="col-sm-2">
+                <img id="empresa" src="{{oferta.imagenUrl}}">
+            </div>
+        </div>
+        <hr>
+
+        <article id="margin">
+            <div class="cuerpo">
+                {{oferta.descripcion}}
+            </div>
+            <hr>
+            <div class="resumen">
+               <h4 id="resum">Resumen</h4>
+               <ul id="lista">
+                   <li>Puesto: {{oferta.nombre}}</li>
+                   <li>Empresa: {{oferta.empresa}}</li>
+                   <li>Ciudad: {{oferta.ciudad}}</li>
+                   <li>Horario: {{oferta.horario}}</li>
+
+               </ul>
+            </div>
+
+
+
+        </article>
+    </div>
+
 
 
 
