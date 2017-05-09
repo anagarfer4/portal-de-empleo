@@ -13,8 +13,8 @@ import { ServicioOfertaService } from './lista-de-ofertas/servicio-oferta.servic
 import { FormularioComponent } from './formulario/formulario.component';
 import { PagInicioComponent } from './pag-inicio/pag-inicio.component';
 import { BuscadorPipe } from './buscador.pipe';
-
-
+import { DescripcionComponent } from './descripcion/descripcion.component';
+import { AcortarDescripcionPipe } from './acortar-descripcion.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { BuscadorPipe } from './buscador.pipe';
     FormularioComponent,
     PagInicioComponent,
     BuscadorPipe,
-   
+    DescripcionComponent,
+    AcortarDescripcionPipe,
   ],
   imports: [
     BrowserModule,
