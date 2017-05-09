@@ -15,8 +15,8 @@ export class ServicioOfertaService {
 
   constructor() { }
 
-editar(item: any) {
-  this.ofertas.push(item)
+editar(oferta: Oferta) {
+  this.ofertas.push(oferta)
 }
 devolverOferta(): Array<Oferta> {
   return this.ofertas;
