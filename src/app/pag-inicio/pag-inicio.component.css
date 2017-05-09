@@ -8,8 +8,9 @@
 }
 h1 {
     text-align: center;
-    color: black;
+    color:black;
     font-size: 60px;
+	font-family: Courier New, Courier, monospace;
 }
 .myButton {
 	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
@@ -55,15 +56,14 @@ h1 {
     text-align: center;    
 }
 body {
-    background-image: url("https://www.mastermagazine.info/termino/wp-content/uploads/Codigo-Objeto1.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-    width: 100%;
-    min-height: 100vh;
+    background-image: url("http://cdn.techgyd.com/web-development-coding.jpg");
+    background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+		min-height: 100vh;
+         
 }
 
 html {

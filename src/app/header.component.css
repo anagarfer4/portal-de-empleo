@@ -1,12 +1,15 @@
 #brand {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
-/*nav {
-    height: 100px;
-}*/
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    padding: 0px;
+}
 
-.navbar-custom {
+.navbar {
     color: black;
-    background-color: grey;
+    background-color: white;
 }
+
