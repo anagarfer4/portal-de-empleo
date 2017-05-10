@@ -15,6 +15,7 @@ export class OfertaItemComponent implements OnInit {
 
   @Input() oferta: Oferta;
   @Input() posicion: number;
+  @Input() ofertaAnadida: Oferta;
 
   items: Array<Oferta> = [];
   inscripcion = false;
@@ -28,9 +29,7 @@ export class OfertaItemComponent implements OnInit {
     this.items = this.sos.devolverOferta();
   }
 
-  ofertaEditada(oferta: Oferta) {
-    this.sos.editar(oferta);
-  }
+  
   navegarAFormulario() {
     this.router.navigate(['formulario']);
   }
@@ -65,4 +64,3 @@ export class OfertaItemComponent implements OnInit {
       });
   }
   }
-
