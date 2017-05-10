@@ -2,17 +2,17 @@
     text-align: center;
 	margin-top: 40px;
 	margin-bottom: 200px;
-	height: 40px;
+	height: 150px;
 }
 
 #logo {
-    width: 300px;
+    height: 300px;
 }
 h1 {
     text-align: center;
     color:black;
     font-size: 60px;
-	font-family: Courier New, Courier, monospace;
+	font-family: ubuntu;
 }
 .myButton {
 	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
