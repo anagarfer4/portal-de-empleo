@@ -31,7 +31,7 @@ export class OfertaItemComponent implements OnInit {
 
   
   navegarAFormulario() {
-    this.router.navigate(['formulario']);
+    this.router.navigate(['formulario', this.posicion]);
   }
 
   aplicar() {
@@ -47,7 +47,7 @@ export class OfertaItemComponent implements OnInit {
     var that = this.sos;
    swal({
       title: '¿Estás seguro?',
-      text: "La oferta se eliminará para siempre",
+      text: 'La oferta se eliminará para siempre',
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
@@ -58,7 +58,7 @@ export class OfertaItemComponent implements OnInit {
       that.eliminarOferta(oferta);
         swal(
         '¡Oferta eliminada!',
-        'La oferta se ha eliminado correctamentexºxºxºº',
+        'La oferta se ha eliminado correctamente',
         'success'
         )
       });

@@ -13,6 +13,7 @@ const APP_ROUTES: Routes = [
     { path: 'oferta-item/:id', component: OfertaItemComponent, children: OFERTA_ROUTES },
     { path: 'lista-de-ofertas', component: ListaDeOfertasComponent },
     { path: 'formulario', component: FormularioComponent },
+    { path: 'formulario/:id', component: FormularioComponent },
     { path: '', component: PagInicioComponent },
     { path: 'oferta-info/:id', component: DescripcionComponent }
 
