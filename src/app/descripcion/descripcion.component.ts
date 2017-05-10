@@ -22,9 +22,9 @@ private activatedRoute: ActivatedRoute) { this.subscription = activatedRoute.par
 ); }
 
 
-// devolverDescripcion(indice: number): Oferta { 
-//   return this.ofertas[indice];
-// }
+//devolverDescripcion(indice: number): Oferta { 
+//return this.ofertas[indice];
+//}
 
   ngOnInit() {
   }

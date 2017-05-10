@@ -22,21 +22,21 @@ export class ServicioOfertaService {
     new Oferta('Programador Senior CMS TRIDION y .NET', 'Desde el departamento de RRHH de EDB, necesitamos incorporar un Programador con experiencia en el gestor de contenidos Tridion y en entorno .NET.Requisitos:- C#, SPM, SQL y..','http://www.infojobs.net/logo/logo/do-get.xhtml?id=876780150&dgv=6501052247269379676', 'EDB-Exportadora Data Base, S.A.', '30/04/2017', 'Bilbao, España', 'Jornada completa')
     
 
-
     
 // de este apartado cogen los datos la oferta y la descripcion de la oferta
   ];
-
   constructor() { }
 
-editar(oferta: Oferta) {
+
+  anadirOfertaEnviada(oferta: Oferta) {
   this.ofertas.push(oferta)
+
 }
 devolverOferta(): Array<Oferta> {
   return this.ofertas;
 }
 
-devolverDescripcion(indice: number): Oferta {
+devolverDescripcion(indice: number): Oferta { 
   return this.ofertas[indice];
 }
 
@@ -45,11 +45,6 @@ eliminarOferta(oferta: Oferta) {
   var ofertaEliminada = this.ofertas.splice(ofertaAEliminar, 1);
 }
 
-
-// //enviarOfertaEditada(oferta: any) {
-//   //this.ofertaEditada.emit(oferta);
-// }
 }
-
 
 

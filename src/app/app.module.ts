@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
 import { ROUTING } from './app.routing';
 import { HeaderComponent } from './header.component';
@@ -32,7 +31,8 @@ import { AcortarDescripcionPipe } from './acortar-descripcion.pipe';
     BrowserModule,
     FormsModule,
     HttpModule,
-    ROUTING
+    ROUTING,
+    ReactiveFormsModule
   ],
   providers: [ServicioOfertaService],
   bootstrap: [AppComponent]
