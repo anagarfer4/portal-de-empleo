@@ -8,7 +8,7 @@
                 <h2 ><b>{{oferta.nombre}}</b></h2>
 
                 <a class="backlink hidden-xs" href="/lista-de-ofertas">←</a>
-                <a  id="anchor" href="#"><h4>{{oferta.empresa}}</h4></a>
+                <a  id="anchor" href="{{oferta.web}}"><h4>{{oferta.empresa}}</h4></a>
                 <h5 id="resum"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}}</h5>
                <h5 id="resum"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{oferta.tipoDeOferta}}</h5>
                 <!--poner botones con rrss-->
@@ -41,7 +41,7 @@
 
                     <tr>
                         <td colspan="2">Empresa:</td>
-                        <a id="anchor" href="#"><td>{{oferta.web}}</td></a>
+                        <a id="anchor" href="{{oferta.web}}"><td>{{oferta.empresa}}</td></a>
                     </tr>
                     <tr>
                         <td colspan="2">Ciudad:</td>
