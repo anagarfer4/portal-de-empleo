@@ -1,5 +1,4 @@
 #imagen {
-
     width: 100px;
     height: 50px;
     text-align: center;
@@ -7,25 +6,36 @@
 }
 
 h1 {
-
-    color: purple ;
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 50px;
- 
-
+    color: black ;
+    text-align: left;
+    margin-left: 25px;
+    font-size: 30px;
 }
 
 div {
-
-    color: grey ;
-    font-family: Ubuntu;
-    font-size: 20px;
-    
-    
- 
+    color: black ;
+    font-size: 15px;
 }
 
+#pagina{
+    margin: 0px;
+    border: solid lightgray;
+    border-width: 80px; 
+    margin-top: -40px;
+}
+
+#botonEnviar {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#input1 {
+    margin-left: 10px;
+}
+
+#link{
+    margin-left: 30px;
+}
 
 
 
