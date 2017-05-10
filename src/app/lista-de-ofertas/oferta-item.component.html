@@ -1,12 +1,10 @@
 <a class="list-group-item">
-
-
   <div class="row">
     <div class="col-sm-1">
       <img id="empresa" src="{{oferta.imagenUrl}}">
     </div>
     <div class="col-sm-6">
-      <a id="descript" [routerLink]="['/oferta-info', posicion]">
+      <a id="anchor" [routerLink]="['/oferta-info', posicion]">
         <h3>{{oferta.nombre}}</h3>
       </a>
       <h3>{{oferta.empresa}}</h3>
@@ -14,10 +12,10 @@
     </div>
 
     <div class="col-sm-2">
-      <h4>{{oferta.ciudad}} </h4>
+      <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}} </h4>
     </div>
     <div class=" col-sm-2">
-      <h4>{{oferta.fecha}}</h4>
+      <h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>{{oferta.fecha}}</h4>
     </div>
   </div>
   <div class="row">
@@ -26,8 +24,7 @@
     <p>{{oferta.inscrito}}</p>
   </div>
   <div class="btn-group">
-    <br>
-    <br>
+    
     <span><button [disabled]="desactivar" type="button" class="btn btn-success" (click)="aplicar()">Inscribirme</button></span>
     <span><button type="button" class="btn btn-primary" (click)="navegarAFormulario()">Editar oferta</button></span>
     <span><button type="button" class="btn btn-danger" (click)="eliminar(oferta)">Eliminar</button></span>
