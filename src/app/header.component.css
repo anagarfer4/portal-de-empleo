@@ -1,8 +1,11 @@
 #brand {
-    width: 60px;
-    height: 35px;
+    height: 55px;
     margin-left: 10px;
 }
+#divBrand {
+    margin-top: -15px;
+}
+
 nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
