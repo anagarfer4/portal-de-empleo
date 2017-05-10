@@ -10,8 +10,7 @@ import { ServicioOfertaService } from './servicio-oferta.service';
 
 })
 export class ListaDeOfertasComponent implements OnInit {
-  
-  
+
   ofertas: Array<Oferta> = [];
 
   
