@@ -54,7 +54,7 @@ export class DescripcionComponent implements OnInit {
     var thet = this.router;
    swal({
       title: '¿Estás seguro?',
-      text: "La oferta se eliminará para siempre",
+      text: 'La oferta se eliminará para siempre',
       type: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
@@ -65,7 +65,7 @@ export class DescripcionComponent implements OnInit {
       that.eliminarOferta(oferta);
         swal(
         '¡Oferta eliminada!',
-        'La oferta se ha eliminado correctamentexºxºxºº',
+        'La oferta se ha eliminado correctamente',
         'success'
         ).then(function(){
           thet.navigate(['lista-de-ofertas']);

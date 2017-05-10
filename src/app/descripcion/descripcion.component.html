@@ -3,12 +3,14 @@
         <div id="margen" class="row">
             <div class="col-sm-8">
 
+
                 <h5 id="resum">Oferta publicada el {{oferta.fechaPubli}}</h5>
-                <h2 style="font-weight:bold">{{oferta.nombre}}</h2>
+                <h2 ><b>{{oferta.nombre}}</b></h2>
+
                 <a class="backlink hidden-xs" href="/lista-de-ofertas">←</a>
                 <a  id="anchor" href="#"><h4>{{oferta.empresa}}</h4></a>
                 <h5 id="resum"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}}</h5>
-               <h5 id="resum"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{oferta.jornada}}</h5>
+               <h5 id="resum"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{oferta.tipoDeOferta}}</h5>
                 <!--poner botones con rrss-->
             </div>
                 <img id="empresa" src="{{oferta.imagenUrl}}">
@@ -40,8 +42,8 @@
                         <td>{{oferta.ciudad}}</td>
                     </tr>
                     <tr>
-                        <td colspan="2">Horario:</td>
-                        <td>{{oferta.jornada}}</td>
+                        <td colspan="2">Tipo de Oferta:</td>
+                        <td>{{oferta.tipoDeOferta}}</td>
                     </tr>
                 </tbody>
             </table>
