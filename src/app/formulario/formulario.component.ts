@@ -90,8 +90,10 @@ export class FormularioComponent {
     let empresaOFerta = '';
     let descripcionOferta = '';
     let ciudadOferta = '';
-    let fechaPubliOferta = new Date ();
+    let fechaPubliOferta = '';
     let imagenUrlOferta = '';
+    let webOferta = '';
+    let opcionesOferta = '';
     
 
 if (!this.esNueva){
@@ -101,6 +103,9 @@ if (!this.esNueva){
   ciudadOferta = this.oferta.ciudad;
   fechaPubliOferta = this.oferta.fechaPubli;
   imagenUrlOferta = this.oferta.imagenUrl;
+  webOferta = this.oferta.web;
+  opcionesOferta = this.oferta.opciones;
+
 
 }
 
@@ -114,7 +119,9 @@ this.miFormulario = this.formBuilder.group({
   ciudad: [ciudadOferta, Validators.required],
   fechaPubli: [fechaPubliOferta, Validators.required],
   imagenUrl: [imagenUrlOferta, Validators.required],
-
+  web: [webOferta],
+  opciones: [opcionesOferta],
+  
 });
 
 }
@@ -126,16 +133,6 @@ private volver() {
 }
 
 
-
-
-//anadirOferta() {
-  //console.log(this.miFormulario.value);
-  //this.servicioOfertaService.anadirOfertaEnviada(this.miFormulario.value);
-  //this.volver();
-
-
-
-//}
 
 }
 
