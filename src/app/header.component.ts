@@ -9,7 +9,7 @@ import { BuscadorPipe } from './buscador.pipe';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  
   constructor(private router: Router) { }
 
   ngOnInit() {
