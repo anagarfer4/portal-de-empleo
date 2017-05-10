@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Oferta } from './oferta';
 import { Router } from '@angular/router';
 import { ServicioOfertaService } from './servicio-oferta.service';
@@ -11,7 +11,10 @@ import { ServicioOfertaService } from './servicio-oferta.service';
 })
 export class ListaDeOfertasComponent implements OnInit {
   
+  
   ofertas: Array<Oferta> = [];
+
+  
 
   constructor(private servicioOfertaService: ServicioOfertaService, private router: Router) { }
 
@@ -20,15 +23,17 @@ export class ListaDeOfertasComponent implements OnInit {
   }
 
 
+  
 
-guardarOferta(oferta: Oferta){
-   this.servicioOfertaService.anadirOfertaEnviada(oferta);
+//guardarOferta(oferta: Oferta){
+   //this.servicioOfertaService.anadirOfertaEnviada(oferta);
 
- }
+ //}
 
  anadirOferta(oferta: Oferta){
-   this.servicioOfertaService.anadirOfertaEnviada(oferta);
-   this.servicioOfertaService.devolverOferta();
+  this.servicioOfertaService.anadirOfertaEnviada(oferta);
+  this.servicioOfertaService.devolverOferta();
 
  }
 }
+

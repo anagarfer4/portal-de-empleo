@@ -1,62 +1,65 @@
+<br>
+<br>
+<h1> Añade o edita tus ofertas </h1>
+<br> <br> <br> <br>
 
-<h2> Ofertas </h2>
-<br> <br>
-<form class="form-horizontal" role="form">
-  
-  
-   <div class="form-group">
-    <label for="Oferta" class="col-lg-2 control-label">Nombre oferta</label>
-    <div class="col-lg-4">
-      <input class="form-control" placeholder="Nombre de la oferta">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="Empresa" class="col-lg-2 control-label">Empresa</label>
-    <div class="col-lg-4">
-      <input class="form-control" placeholder="Nombre Empresa">
-    </div>
-  </div>
-   <div class="form-group">
-    <label for="Descripcion" class="col-lg-2 control-label">Descripción oferta</label>
-    <div class="col-xs-4 col-sm-4">
-      <textarea rows="8" cols="8" class="form-control"> </textarea>
-   
-    </div>
-  </div>
-   <div class="form-group">
-    <label for="Ciudad" class="col-lg-2 control-label">Ciudad</label>
-    <div class="col-lg-2">
-      <input class="form-control" placeholder="Lugar de la oferta">
-    </div>
-  </div>
-   <div class="form-group">
-    <label for="Fecha" class="col-lg-2 control-label">Fecha oferta</label>
-    <div class="col-lg-4">
-      <input type="Date" class="form-control">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="Imagen" class="col-lg-2 control-label">Imagen empresa</label>
-    <div class="col-lg-1">
-      <input type="Image"  id="imagen">
-    </div>
-  </div>
-  
-  <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Aceptar términos y condiciones
-        </label>
+
+<form [formGroup]="miFormulario" (ngSubmit)="anadirOferta()">
+  <div>
+    <div class="col-md-10 form-group"> 
+      <label for="nombre" class="col-lg-4 control-label">Nombre oferta</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="Nombre Oferta">
       </div>
     </div>
-  </div>
-  <br>
-  <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
-      <button type="button" (click)="anadirOferta()" class="btn btn-default">Añadir oferta</button>
+    <div class="col-md-10 form-group"> 
+      <label for="empresa" class="col-lg-4 control-label">Empresa</label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" id="empresa" formControlName="empresa" placeholder="Nombre Empresa">
+      </div>
     </div>
-  </div>
-  
-</form>
+  <div class="col-md-10 form-group"> 
+      <label for="Descripcion" class="col-lg-4 control-label">Descripción oferta</label>
+      <div class="col-xs-4 col-sm-4">
+        <textarea rows="8" cols="8" class="form-control" id="descripcion" formControlName="descripcion"> </textarea>
+      </div>
+    </div>
+   <div class="col-md-10 form-group"> 
+      <label for="Ciudad" class="col-lg-4 control-label">Ciudad</label>
+      <div class="col-lg-2">
+        <input type="text" class="form-control" id="ciudad" formControlName="ciudad" placeholder="Lugar de la oferta">
+      </div>
+    </div>
+    <div class="col-md-10 form-group"> 
+      <label for="Fecha" class="col-lg-4 control-label">Fecha oferta</label>
+      <div class="col-lg-2">
+        <input type="Date" class="form-control" id="fecha" formControlName="fecha">
+      </div>
+    </div>
+   <div class="col-md-10 form-group"> 
+      <label for="Imagen" class="col-lg-4 control-label">Logo empresa</label>
+      <div class="col-lg-4">
+        <input type="text" id="imagen" formControlName="imagen" #imagen>
+        <img src="{}imagen.value{}">
+      </div>
+    </div>
+    
 
+   <!-- <div class="form-group">
+      <div class="col-lg-offset-4 col-lg-10">
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" id="checkbox" formControlName="checkbox"> Aceptar términos y condiciones
+        </label>
+        </div>
+      </div>
+    </div>-->
+    <br>
+    <div class="form-group">
+      <div class="col-lg-offset-4 col-lg-10">
+        <button type="submit" class="btn btn-default" [disabled]="miFormulario.invalid">Enviar</button>
+      </div>
+    </div>
+
+  </div>
+</form>
