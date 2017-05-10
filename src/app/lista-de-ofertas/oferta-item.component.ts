@@ -31,7 +31,7 @@ export class OfertaItemComponent implements OnInit {
 
   
   navegarAFormulario() {
-    this.router.navigate(['formulario']);
+    this.router.navigate(['formulario', this.posicion]);
   }
 
   aplicar() {

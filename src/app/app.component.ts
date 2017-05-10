@@ -7,9 +7,7 @@ import { Oferta } from './lista-de-ofertas/oferta';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  
-  
+    
   constructor() { }
   ngOnInit() {
   }
