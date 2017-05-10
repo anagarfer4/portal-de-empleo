@@ -4,7 +4,8 @@ import { EditarOfertaGuard } from './editar-oferta.guard';
 import { AnadirOfertaGuard } from './anadir-oferta.guard';
 import { DescripcionComponent } from '../descripcion/descripcion.component';
 
+
 export const OFERTA_ROUTES: Routes = [
    { path: 'editar', component: FormularioComponent, canDeactivate: [EditarOfertaGuard] },
-   { path: 'anadir', component: FormularioComponent, canDeactivate: [AnadirOfertaGuard] }
+   { path: 'anadir', component: FormularioComponent, canDeactivate: [AnadirOfertaGuard] },
 ];
