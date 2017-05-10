@@ -3,12 +3,12 @@
         <div id="margen" class="row">
             <div class="col-sm-5">
 
-                <h5 id="resum">Oferta publicada el {{oferta.fecha}}</h5>
+                <h5 id="resum">Oferta publicada el {{oferta.fechaPubli}}</h5>
                 <h2 style="font-weight:bold">{{oferta.nombre}}</h2>
                 <a class="backlink hidden-xs" href="/lista-de-ofertas">←</a>
                 <a  id="anchor" href="#"><h4>{{oferta.empresa}}</h4></a>
                 <h5 id="resum"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}}</h5>
-               <h5 id="resum"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{oferta.horario}}</h5>
+               <h5 id="resum"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{oferta.jornada}}</h5>
                 <!--poner botones con rrss-->
             </div>
                 <img id="empresa" src="{{oferta.imagenUrl}}">
@@ -28,20 +28,20 @@
                 <tbody>
                     <tr>
                         <td colspan="2">Puesto:</td>
-                        <td>{{oferta.nombre}}:</td>
+                        <td>{{oferta.nombre}}</td>
                     </tr>
 
                     <tr>
                         <td colspan="2">Empresa:</td>
-                        <a id="anchor" href="#"><td>{{oferta.empresa}}:</td></a>
+                        <a id="anchor" href="#"><td>{{oferta.empresa}}</td></a>
                     </tr>
                     <tr>
                         <td colspan="2">Ciudad:</td>
-                        <td>{{oferta.ciudad}}:</td>
+                        <td>{{oferta.ciudad}}</td>
                     </tr>
                     <tr>
                         <td colspan="2">Horario:</td>
-                        <td>{{oferta.horario}}:</td>
+                        <td>{{oferta.jornada}}</td>
                     </tr>
                 </tbody>
             </table>

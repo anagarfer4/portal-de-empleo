@@ -18,12 +18,13 @@ export class FormularioComponent {
 
  constructor (private formBuilder: FormBuilder, private servicioOfertaService: ServicioOfertaService, private router: Router){
    this.miFormulario = formBuilder.group({
-       'nombre': [''],
-       'empresa': [''],
-       'descripcion': [''],
-       'ciudad': [''],
-       'fecha':  [''],
-       'imagen': ['']
+       'nombre': ['', Validators.required],
+       'empresa': ['', Validators.required],
+       'descripcion': ['', Validators.required],
+       'ciudad': ['', Validators.required],
+       'fechaPubli':  ['', Validators.required],
+       'imagen': [''],
+       'checkbox':['', Validators.required]
  });
 
  }
@@ -33,6 +34,7 @@ anadirOferta() {
   console.log(this.miFormulario.value);
   this.servicioOfertaService.anadirOfertaEnviada(this.miFormulario.value);
   this.router.navigate(['/lista-de-ofertas']);
+ 
 
 
  }

@@ -3,8 +3,7 @@ import { Oferta } from './oferta';
 @Injectable()
 export class ServicioOfertaService {
   private ofertas: Array<Oferta> = [
-
-    new Oferta('Programador PHP, MYSQL', 'Buscamos un programador PHP con al menos 1 año de experiencia para cubrir las necesidades en el departamento de informática, además de dar soporte a otros departamentos y desarrollar mejoras en la página web..',
+     new Oferta('Programador PHP, MYSQL', 'Buscamos un programador PHP con al menos 1 año de experiencia para cubrir las necesidades en el departamento de informática, además de dar soporte a otros departamentos y desarrollar mejoras en la página web ..',
     'http://www.infojobs.net/logo/logo/do-get.xhtml?id=22313713628&dgv=8640945448931150180', 'TICTUM, Innovación y Tecnología, S.L', '10/05/2017', 'Madrid, España', 'Jornada completa'),
     new Oferta('Becario Marketing Digital - Prácticas', 'Right Design Agency (RDA) es un equipo multidisciplinar compuesto por arquitectos, interioristas, diseñadores y gestores inmobiliarios y de comunic...', 'https://d1ewohb620cza6.cloudfront.net/job_cover_xs/job-covers/000/049/631/49631-original.jpg?1493811169', 'Right Design Agency', '10/05/2017', 'Madrid, España', 'tiempo completo'),
     new Oferta('Programador Junior (PHP&Java)', 'Para proyecto en Madrid, buscamos Programador Junior que se involucre en largo proyecto en estado de desarrollo y sus correspondientes ampliaciones.Conocimientos mínim..',
@@ -22,55 +21,34 @@ export class ServicioOfertaService {
     new Oferta('Programador Senior CMS TRIDION y .NET', 'Desde el departamento de RRHH de EDB, necesitamos incorporar un Programador con experiencia en el gestor de contenidos Tridion y en entorno .NET.Requisitos:- C#, SPM, SQL y..','http://www.infojobs.net/logo/logo/do-get.xhtml?id=876780150&dgv=6501052247269379676', 'EDB-Exportadora Data Base, S.A.', '30/04/2017', 'Bilbao, España', 'Jornada completa')
     
 
-
     
 // de este apartado cogen los datos la oferta y la descripcion de la oferta
   ];
-  ofertaEnviada = new EventEmitter <Oferta> ();
+  
 
   constructor() { }
 
-<<<<<<< HEAD
   anadirOfertaEnviada(oferta: Oferta) {
-  this.ofertas.push(oferta)
+  this.ofertas.unshift(oferta);
 
-
-=======
-editar(oferta: Oferta) {
-  this.ofertas.push(oferta)
->>>>>>> 4a0bb32f4b0f7126a14e5e1f42a4dc230582ff9e
 }
+
 devolverOferta(): Array<Oferta> {
   return this.ofertas;
 }
 
-<<<<<<< HEAD
-
-//anadirOfertaEnviada (oferta: Oferta) {
-  //this.ofertaEnviada.emit(oferta);
-  
-//}
 
 
 devolverDescripcion(indice: number): Oferta { 
   return this.ofertas[indice];
 }
   
-=======
-devolverDescripcion(indice: number): Oferta { 
-  return this.ofertas[indice];
-}
->>>>>>> 4a0bb32f4b0f7126a14e5e1f42a4dc230582ff9e
 
 eliminarOferta(oferta: Oferta) {
   var ofertaAEliminar = this.ofertas.indexOf(oferta);
   var ofertaEliminada = this.ofertas.splice(ofertaAEliminar, 1);
 }
 
-
-// //enviarOfertaEditada(oferta: any) {
-//   //this.ofertaEditada.emit(oferta);
-// }
 }
 
 
