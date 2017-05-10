@@ -22,8 +22,9 @@ export class FormularioComponent {
        'empresa': [''],
        'descripcion': [''],
        'ciudad': [''],
-       'fecha':  [''],
-       'imagen': ['']
+       'fechaPubli':  [''],
+       'imagen': [''],
+       'checkbox': ['']
  });
 
  }
