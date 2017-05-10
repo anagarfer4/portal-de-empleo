@@ -15,7 +15,7 @@
       <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}} </h4>
     </div>
     <div class=" col-sm-2">
-      <h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>{{oferta.fechaPubli | date:'dd/MM/yy'}}</h4>
+      <h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>{{oferta.fechaPubli | date:'dd/MM/yy' }}</h4>
     </div>
   </div>
   <div class="row">
@@ -37,46 +37,4 @@
 <div *ngIf="bloqueo" class="alert alert-warning" role="alert">Lo sentimos, esta oferta ya no admite más inscripciones.</div>
 
 
-<!--<a class="list-group-item">
-  <span class="row">
-      <span class="col-xs-6 col-sm-3">
-        <img id="empresa"  src="{{oferta.imagenUrl}}">
-      </span>
-  </span>
-  <div class="row">
-        <div class="col-xs-13,5 col-sm-9">
-        <a id="descript" href="#" ><h2>{{oferta.nombre}}</h2></a>
-        <h3>{{oferta.empresa}}</h3>
-        <p>{{oferta.descripcion}}</p>
 
-      </div>
-  </div>
-  
-  <div class="row">
-    
-      <div class="col-xs-9 col-sm-6">
-        <h4>{{oferta.ciudad}}</h4>
-      </div>
-  </div>
-    <div class="row">
-    
-      <div class="col-xs-4,5 col-sm-3">
-        <h4>{{oferta.fecha}}</h4>
-      </div>
-      <br>
-        <p>{{oferta.inscrito}}</p>
-    </div>
-<div class="btn-group">
-  <br>
-  <br>
-  <span><button [disabled]="desactivar" type="button" class="btn btn-success" (click)="aplicar()">Inscribirme</button></span>
-  <span><button type="button" class="btn btn-primary" (click)="navegarAFormulario()">Editar oferta</button></span>
-  <span><button type="button" class="btn btn-danger" (click)="eliminar(oferta)">Eliminar</button></span>
-  <span><button type="button" class="btn btn-warning" (click)="bloquear()">Bloquear oferta</button></span>
-  </div>
-</a>
-
-<div *ngIf="inscripcion" class="alert alert-success" role="alert">¡Gracias por inscribirte! Próximamente nos pondremos en contacto contigo.</div>
-
-
-<div *ngIf="bloqueo" class="alert alert-warning" role="alert">Lo sentimos, esta oferta ya no admite más inscripciones.</div>-->
