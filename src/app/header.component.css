@@ -1,9 +1,9 @@
 #brand {
     height: 55px;
-    margin-left: 10px;
+    margin-left: 43px;
 }
 #divBrand {
-    margin-top: -15px;
+    margin-top: -10px;
 }
 
 nav {
@@ -14,14 +14,15 @@ nav {
 .navbar {
     color: black;
     background-color: #3370e2;
+    height: 65px;
 }
 
 #boton1 {
-    margin-top: 8px;
+    margin-top: 13px;
 }
 
 #boton2 {
-    margin-top: 8px;
+    margin-top: 13px;
     margin-right: 73px;
 }
 

@@ -21,14 +21,6 @@ export class ListaDeOfertasComponent implements OnInit {
     this.ofertas = this.servicioOfertaService.devolverOferta();
   }
 
-
-  
-
-//guardarOferta(oferta: Oferta){
-   //this.servicioOfertaService.anadirOfertaEnviada(oferta);
-
- //}
-
  anadirOferta(oferta: Oferta){
   this.servicioOfertaService.anadirOfertaEnviada(oferta);
   this.servicioOfertaService.devolverOferta();
