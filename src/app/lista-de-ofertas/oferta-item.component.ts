@@ -58,7 +58,7 @@ export class OfertaItemComponent implements OnInit {
       that.eliminarOferta(oferta);
         swal(
         '¡Oferta eliminada!',
-        'La oferta ha sido eliminada',
+        'La oferta se ha eliminado correctamentexºxºxºº',
         'success'
         )
       });
