@@ -7,14 +7,13 @@
 }
 
 nav {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
     padding: 0px;
 }
 
 .navbar {
     color: black;
-    background-color: hsl(207.8, 65.6%, 62.3%);
+    background-color: #3370e2;
 }
 
 #boton1 {
@@ -23,7 +22,7 @@ nav {
 
 #boton2 {
     margin-top: 8px;
-    margin-right: 25px;
+    margin-right: 73px;
 }
 
 #botonEmpresa {
