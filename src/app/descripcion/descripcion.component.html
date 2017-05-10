@@ -1,54 +1,64 @@
-<div class="row">
+<div id="pagina" class="row">
     <div class="col-sm-12">
         <div id="margen" class="row">
             <div class="col-sm-5">
 
-                <h5>Oferta publicada el {{oferta.fecha}}</h5>
-                <h2>{{oferta.nombre}}</h2>
+                <h5 id="resum">Oferta publicada el {{oferta.fecha}}</h5>
+                <h2 style="font-weight:bold">{{oferta.nombre}}</h2>
                 <a class="backlink hidden-xs" href="/lista-de-ofertas">←</a>
-                <a id="descript" href="#">
-                    <h4>{{oferta.empresa}}</h4>
-                </a>
-                <h5>{{oferta.ciudad}}</h5>
-                <h5>{{oferta.horario}}</h5>
+                <a  id="anchor" href="#"><h4>{{oferta.empresa}}</h4></a>
+                <h5 id="resum"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}}</h5>
+               <h5 id="resum"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{oferta.horario}}</h5>
                 <!--poner botones con rrss-->
             </div>
-            <div class="col-sm-2">
                 <img id="empresa" src="{{oferta.imagenUrl}}">
-            </div>
         </div>
         <hr>
-
         <article id="margin">
             <div class="cuerpo">
                 {{oferta.descripcion}}
             </div>
             <hr>
-            <div class="resumen">
-               <h4 id="resum">Resumen</h4>
-               <ul id="lista">
-                   <li>Puesto: {{oferta.nombre}}</li>
-                   <li>Empresa: {{oferta.empresa}}</li>
-                   <li>Ciudad: {{oferta.ciudad}}</li>
-                   <li>Horario: {{oferta.horario}}</li>
+            <table class="resumen">
+                <thead>
+                    <th colspan="2">
+                        <h4 id="resum">Resumen</h4>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Puesto:</td>
+                        <td>{{oferta.nombre}}:</td>
+                    </tr>
 
-               </ul>
-            </div>
-
-
-
+                    <tr>
+                        <td colspan="2">Empresa:</td>
+                        <a id="anchor" href="#"><td>{{oferta.empresa}}:</td></a>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Ciudad:</td>
+                        <td>{{oferta.ciudad}}:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Horario:</td>
+                        <td>{{oferta.horario}}:</td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
+        
+        <div class="btn-group">
+    <br>
+    <br>
+    <span><button [disabled]="desactivar" type="button" class="btn btn-success" (click)="aplicar()">Inscribirme</button></span>
+    <span><button type="button" class="btn btn-primary" (click)="navegarAFormulario()">Editar oferta</button></span>
+    <span><button type="button" class="btn btn-danger" (click)="eliminar(oferta)">Eliminar</button></span>
+    <span><button type="button" class="btn btn-warning" (click)="bloquear()">Bloquear oferta</button></span>
+   
+    <br>
+    <br>
+  </div>
     </div>
-
-
-
-
-
-
-
-
-
-
 </div>
 
 
