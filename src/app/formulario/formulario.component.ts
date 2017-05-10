@@ -14,10 +14,11 @@ import { FormGroup, FormControl, Validators, FormArray, FormBuilder } from '@ang
 export class FormularioComponent {
 
 
- miFormulario: FormGroup; 
+ miFormulario: FormGroup;
 
  constructor (private formBuilder: FormBuilder, private servicioOfertaService: ServicioOfertaService, private router: Router){
    this.miFormulario = formBuilder.group({
+
        'nombre': ['', Validators.required],
        'empresa': ['', Validators.required],
        'descripcion': ['', Validators.required],
@@ -38,6 +39,6 @@ anadirOferta() {
 
 
  }
- 
+
 }
 

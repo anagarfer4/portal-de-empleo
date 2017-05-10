@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
-
 import { AppComponent } from './app.component';
 import { ROUTING } from './app.routing';
 import { HeaderComponent } from './header.component';
