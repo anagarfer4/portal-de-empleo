@@ -36,7 +36,7 @@ devolverOferta(): Array<Oferta> {
   return this.ofertas;
 }
 
-devolverDescripcion(indice: number): Oferta { 
+devolverDescripcion(indice: number): Oferta {
   return this.ofertas[indice];
 }
 
