@@ -62,6 +62,7 @@ export class FormularioComponent {
     let fechaPubliOferta = '';
     let imagenUrlOferta = '';
     let webOferta = '';
+
     let tipoDeOfertaOferta = '';
     if (!this.esNueva) {
       nombreOferta = this.oferta.nombre;
@@ -87,7 +88,7 @@ export class FormularioComponent {
 
   }
   private volver() {
-    this.router.navigate(['/lista-de-ofertas']);
+    this.router.navigate(['/ofertas/lista-de-ofertas']);
   }
 
 }

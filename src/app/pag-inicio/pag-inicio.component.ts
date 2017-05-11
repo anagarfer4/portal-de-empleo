@@ -14,6 +14,6 @@ export class PagInicioComponent implements OnInit {
   ngOnInit() {
   }
   navegarAOfertas() {
-    this.router.navigate(['lista-de-ofertas']);
+    this.router.navigate(['ofertas']);
   }
 }

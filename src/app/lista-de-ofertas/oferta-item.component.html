@@ -5,14 +5,14 @@
       <img id="empresa" src="{{oferta.imagenUrl}}">
     </div>
     <div class="col-sm-6">
-      <a id="anchor" [routerLink]="['/oferta-info', posicion]">
+      <a id="anchor" [routerLink]="['/ofertas', 'oferta-info', posicion ]">
         <h3>{{oferta.nombre}}</h3>
       </a>
       <h3>{{oferta.empresa}}</h3>
       <p>{{oferta.descripcion | acortarDescripcion}}</p>
     </div>
 
-    <div class="col-sm-2">
+    <div class="col-sm-3">
       <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}} </h4>
     </div>
     <div class=" col-sm-2">

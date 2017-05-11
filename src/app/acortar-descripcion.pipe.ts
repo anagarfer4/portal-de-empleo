@@ -6,8 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class AcortarDescripcionPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    if (value.length > 100) {
-    return value.slice(0, 100) + "...";
+    if (value.length > 200) {
+    return value.slice(0, 200) + "...";
   }
   return value;
   }
