@@ -29,9 +29,9 @@ export class OfertaItemComponent implements OnInit {
     this.items = this.sos.devolverOferta();
   }
 
-  
+
   navegarAFormulario() {
-    this.router.navigate(['formulario', this.posicion]);
+    this.router.navigate(['/ofertas/formulario', this.posicion]);
   }
 
   aplicar() {

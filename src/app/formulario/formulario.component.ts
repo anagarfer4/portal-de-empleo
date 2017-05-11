@@ -128,7 +128,7 @@ this.miFormulario = this.formBuilder.group({
 
 private volver() {
 
-  this.router.navigate(['/lista-de-ofertas']);
+  this.router.navigate(['/ofertas/lista-de-ofertas']);
 
 }
 

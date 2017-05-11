@@ -5,7 +5,7 @@
       <img id="empresa" src="{{oferta.imagenUrl}}">
     </div>
     <div class="col-sm-6">
-      <a id="anchor" [routerLink]="['/oferta-info', posicion]">
+      <a id="anchor" [routerLink]="['/ofertas', 'oferta-info', posicion ]">
         <h3>{{oferta.nombre}}</h3>
       </a>
       <h3>{{oferta.empresa}}</h3>

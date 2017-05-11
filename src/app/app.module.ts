@@ -14,6 +14,7 @@ import { PagInicioComponent } from './pag-inicio/pag-inicio.component';
 import { BuscadorPipe } from './buscador.pipe';
 import { DescripcionComponent } from './descripcion/descripcion.component';
 import { AcortarDescripcionPipe } from './acortar-descripcion.pipe';
+import { OfertasComponent } from './ofertas/ofertas.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AcortarDescripcionPipe } from './acortar-descripcion.pipe';
     BuscadorPipe,
     DescripcionComponent,
     AcortarDescripcionPipe,
+    OfertasComponent,
   ],
   imports: [
     BrowserModule,

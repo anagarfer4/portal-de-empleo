@@ -37,7 +37,7 @@ export class DescripcionComponent implements OnInit {
   }
 
     navegarAFormulario() {
-    this.router.navigate(['formulario']);
+    this.router.navigate(['/ofertas/formulario', this.id ]);
   }
 
   aplicar() {
@@ -68,7 +68,7 @@ export class DescripcionComponent implements OnInit {
         'La oferta se ha eliminado correctamente',
         'success'
         ).then(function(){
-          thet.navigate(['lista-de-ofertas']);
+          thet.navigate(['/ofertas/lista-de-ofertas']);
         })
       });
   }
