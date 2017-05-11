@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Oferta } from '../lista-de-ofertas/oferta';
 import { ServicioOfertaService } from '../lista-de-ofertas/servicio-oferta.service';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -18,12 +18,14 @@ export class DescripcionComponent implements OnInit {
   bloqueo = false;
   desactivar = false;
   swal: any;
+  @Input() posicion: number;
+
   
-  constructor(private sos: ServicioOfertaService, private service: ServicioOfertaService, private router: Router, private activatedRoute: ActivatedRoute) { this.subscription = activatedRoute.params.subscribe(
+  constructor(private sos: ServicioOfertaService, private router: Router, private activatedRoute: ActivatedRoute) { this.subscription = activatedRoute.params.subscribe(
     (param: any) => {
 
    this.id = param['id'];
-   this.oferta = this.service.devolverDescripcion(this.id);
+   this.oferta = this.sos.devolverDescripcion(this.id);
 }
 ); 
 }
@@ -34,9 +36,11 @@ export class DescripcionComponent implements OnInit {
 //}
 
   ngOnInit() {
+      
   }
 
     navegarAFormulario() {
+
     this.router.navigate(['/ofertas/formulario', this.id ]);
   }
 
