@@ -5,21 +5,23 @@
 
 
                 <h5 id="resum">Oferta publicada el {{oferta.fechaPubli }}</h5>
-                <h2 ><b>{{oferta.nombre}}</b></h2>
+                <h2><b>{{oferta.nombre}}</b></h2>
 
                 <a class="backlink hidden-xs" href="/lista-de-ofertas">←</a>
-                <a  id="anchor" href="{{oferta.web}}"><h4>{{oferta.empresa}}</h4></a>
+                <a id="anchor" href="{{oferta.web}}">
+                    <h4><b>{{oferta.empresa}}</b></h4>
+                </a>
                 <h5 id="resum"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>{{oferta.ciudad}}</h5>
-               <h5 id="resum"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{oferta.tipoDeOferta}}</h5>
-                <!--poner botones con rrss-->
-                    <input type=image src="../resources/facebook-3.png" width="30" height="30">
+                <h5 id="resum"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>{{oferta.tipoDeOferta}}</h5>
+              
+                <input type=image src="../resources/facebook-3.png" width="30" height="30">
 
-                    <input type=image src="../resources/linkedin-5.png" width="30" height="30">
+                <input type=image src="../resources/linkedin-5.png" width="30" height="30">
 
-                    <input type=image src="../resources/twitter.png" width="30" height="30">
+                <input type=image src="../resources/twitter.png" width="30" height="30">
 
             </div>
-                <img id="empresa" src="{{oferta.imagenUrl}}">
+            <img id="empresa" src="{{oferta.imagenUrl}}">
         </div>
         <hr>
         <article id="margin">
@@ -40,11 +42,9 @@
                     </tr>
                     <tr>
                         <td colspan="2">Empresa:</td>
-                        <a id="anchor" href="{{oferta.web}}"><td>{{oferta.empresa}}</td></a>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Web:</td>
-                        <a id="anchor" href="{{oferta.web}}"><td>{{oferta.web}}</td></a>
+                        <a id="anchor" href="{{oferta.web}}">
+                            <td>{{oferta.empresa}}</td>
+                        </a>
                     </tr>
                     <tr>
                         <td colspan="2">Ciudad:</td>
@@ -58,22 +58,22 @@
                 </tbody>
             </table>
         </article>
-        
+
         <div class="btn-group">
-    <br>
-    <br>
-    <span><button [disabled]="desactivar" type="button" class="btn btn-success" (click)="aplicar()">Inscribirme</button></span>
-    <span><button type="button" class="btn btn-primary" (click)="navegarAFormulario()">Editar oferta</button></span>
-    <span><button type="button" class="btn btn-danger" (click)="eliminar(oferta)">Eliminar</button></span>
-    <span><button type="button" class="btn btn-warning" (click)="bloquear()">Bloquear oferta</button></span>
+            <br>
+            <br>
+            <span><button [disabled]="desactivar" type="button" class="btn btn-success" (click)="aplicar()">Inscribirme</button></span>
+            <span><button type="button" class="btn btn-primary" (click)="navegarAFormulario()">Editar oferta</button></span>
+            <span><button type="button" class="btn btn-danger" (click)="eliminar(oferta)">Eliminar</button></span>
+            <span><button type="button" class="btn btn-warning" (click)="bloquear()">Bloquear oferta</button></span>
 
-<div *ngIf="inscripcion" class="alert alert-success" role="alert">¡Gracias por inscribirte! Próximamente nos pondremos en contacto contigo.</div>
+            <div *ngIf="inscripcion" class="alert alert-success" role="alert">¡Gracias por inscribirte! Próximamente nos pondremos en contacto contigo.</div>
 
-<div *ngIf="bloqueo" class="alert alert-warning" role="alert">Lo sentimos, esta oferta ya no admite más inscripciones.</div>
-   
-    <br>
-    <br>
-  </div>
+            <div *ngIf="bloqueo" class="alert alert-warning" role="alert">Lo sentimos, esta oferta ya no admite más inscripciones.</div>
+
+            <br>
+            <br>
+        </div>
     </div>
 </div>
 
